@@ -10,12 +10,10 @@ def loadModel():
     model_url = "https://github.com/andreww-ww/car-price-prediction/releases/download/v1.0/random_search.pkl"
 
     if not os.path.exists(model):
-        with st.spinner("Downloading model... this takes about 30 seconds on the first run."):
+        with st.spinner("---------------------- this takes about 30 seconds to load."):
             urllib.request.urlretrieve(model_url, model)
             
     return joblib.load(model)
-
-
 
 @st.cache_data
 def loadData():
