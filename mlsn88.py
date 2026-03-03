@@ -42,7 +42,7 @@ ocolor=st.text_input("Enter Car Outside Color", value="Silver").lower()
 
 icolor=st.text_input("Enter Car Interior Color", value="White").lower()
 
-year = st.number_input("Enter Year", min_value=1990, max_value=2024, value=2015)
+year = st.number_input("Enter Year", min_value=1990, max_value=2050, value=2015)
 
 odometer = st.number_input("Enter Odometer (Mileage)", min_value=0, value=150000)
 
